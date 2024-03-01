@@ -1,0 +1,47 @@
+{
+    "passengers": [
+      {
+        "id": "passenger001",
+        "name": "Eva Martinez",
+        "email": "eva@example.com",
+        "phone": "+1 (555) 123-4567",
+        "location": "456 Elm St, Suburbia",
+        "destination": "789 Oak St, Outskirts",
+        "preferences": {
+          "smokingAllowed": false,
+          "petsAllowed": true,
+          "musicPreference": "Pop",
+          "partySize": 2
+        }
+      },
+      {
+        "id": "passenger002",
+        "name": "Michael Wilson",
+        "email": "michael@example.com",
+        "phone": "+1 (555) 987-6543",
+        "location": "123 Main St, Cityville",
+        "destination": "789 Oak St, Outskirts",
+        "preferences": {
+          "smokingAllowed": true,
+          "petsAllowed": false,
+          "musicPreference": "Any",
+          "partySize": 1
+        }
+      },
+      {
+        "id": "passenger003",
+        "name": "Sophia Lee",
+        "email": "sophia@example.com",
+        "phone": "+1 (555) 234-5678",
+        "location": "789 Oak St, Outskirts",
+        "destination": "123 Main St, Cityville",
+        "preferences": {
+          "smokingAllowed": false,
+          "petsAllowed": true,
+          "musicPreference": "Rock",
+          "partySize": 4
+        }
+      }
+    ]
+  }
+  

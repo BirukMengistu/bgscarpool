@@ -1,0 +1,473 @@
+{
+  "drivers": [
+    {
+      "id": "user005",
+      "name": "Eva Martinez",
+      "email": "eva@example.com",
+      "phone": "+1 (567) 890-1234",
+      "profile_picture": "url/to/driver/profile_picture.jpg",
+      "trips": [
+        {
+          "trip_id": "tr_04",
+          "car_id": "ca_04",
+          "starting_point": "Green Park",
+          "destination": "Tech Hub",
+          "available_days": ["Monday", "Wednesday", "Friday"],
+          "available_time": {"start": "08:00", "end": "10:00"},
+          "flexibility": ["Flexible"],
+          "notes": "I love chatting with passengers."
+        }
+      ],
+      "car": [{
+        "car_id": "ca_04",
+        "make": "Ford",
+        "model": "Escape",
+        "year": 2019,
+        "color": "Red",
+        "plate_number": "JKL 456"
+      }],
+      "preferences": {
+        "smoking_allowed": false,
+        "pets_allowed": true,
+        "music_preference": "Any",
+        "max_passengers": 3
+      },
+      "reviews": [
+        {
+          "review_id": "rv_09",
+          "review_type": "DRIVER_REVIEW",
+          "from_user": "user006",
+          "rating": 4,
+          "comment": "Friendly driver, clean car."
+        }
+      ]
+    },
+    {
+      "id": "user007",
+      "name": "George Anderson",
+      "email": "george@example.com",
+      "phone": "+1 (678) 901-2345",
+      "profile_picture": "url/to/driver/profile_picture.jpg",
+      "trips": [
+        {
+          "trip_id": "tr_05",
+          "car_id": "ca_05",
+          "starting_point": "Downtown Square",
+          "destination": "Shopping Center",
+          "available_days": ["Tuesday", "Thursday"],
+          "available_time": {"start": "12:00", "end": "14:00"},
+          "flexibility": ["Strict"],
+          "notes": "I prefer a quiet ride with no detours."
+        }
+      ],
+      "car": [{
+        "car_id": "ca_05",
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "year": 2022,
+        "color": "Black",
+        "plate_number": "MNO 789"
+      }],
+      "preferences": {
+        "smoking_allowed": false,
+        "pets_allowed": false,
+        "music_preference": "Silent",
+        "max_passengers": 2
+      },
+      "reviews": [
+        {
+          "review_id": "rv_10",
+          "review_type": "DRIVER_REVIEW",
+          "from_user": "user008",
+          "rating": 5,
+          "comment": "Punctual and professional driver."
+        }
+      ]
+    },
+    {
+      "id": "user009",
+      "name": "Ivan Petrov",
+      "email": "ivan@example.com",
+      "phone": "+1 (789) 012-3456",
+      "profile_picture": "url/to/driver/profile_picture.jpg",
+      "trips": [
+        {
+          "trip_id": "tr_06",
+          "car_id": "ca_06",
+          "starting_point": "Tech Park",
+          "destination": "Airport",
+          "available_days": ["Monday", "Wednesday", "Friday"],
+          "available_time": {"start": "17:00", "end": "19:00"},
+          "flexibility": ["Flexible"],
+          "notes": "I provide complimentary water bottles."
+        }
+      ],
+      "car": [{
+        "car_id": "ca_06",
+        "make": "Tesla",
+        "model": "Model 3",
+        "year": 2021,
+        "color": "White",
+        "plate_number": "PQR 012"
+      }],
+      "preferences": {
+        "smoking_allowed": false,
+        "pets_allowed": true,
+        "music_preference": "Any",
+        "max_passengers": 4
+      },
+      "reviews": [
+        {
+          "review_id": "rv_11",
+          "review_type": "DRIVER_REVIEW",
+          "from_user": "user010",
+          "rating": 4,
+          "comment": "Clean car, friendly driver."
+        }
+      ]
+    },
+    {
+      "id": "user001",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "+1 (123) 456-7890",
+      "profile_picture": "url/to/driver/profile_picture.jpg",
+      "trips": [
+        {
+          "trip_id": "tr_01",
+          "car_id": "ca_02",
+          "starting_point": "Str. name or location",
+          "destination": "Str. name or location",
+          "available_days": ["Monday"],
+          "available_time": {"start": "07:00", "end": "09:00"},
+          "flexibility": ["Strict", "Flexible"],
+          "notes": "I might open radio news on this trip."
+        },
+        {
+          "trip_id": "tr_02",
+          "car_id": "ca_01",
+          "starting_point": "Str. name or location",
+          "destination": "Str. name or location",
+          "available_days": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+          "available_time": {"start": "07:00", "end": "17:00"},
+          "flexibility": ["Strict", "Flexible"],
+          "notes": "I prefer a quiet ride, and I'm open to making short detours if needed."
+        }
+      ],
+      "car": [{
+        "car_id": "ca_01",
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "Blue",
+        "plate_number": "ABC 123"
+      },
+      {
+        "car_id": "ca_02",
+        "make": "Toyota",
+        "model": "RAv4",
+        "year": 2020,
+        "color": "Blue",
+        "plate_number": "ABC 123"
+      }],
+      "preferences": {
+        "smoking_allowed": false,
+        "pets_allowed": true,
+        "music_preference": "Any",
+        "max_passengers": 3
+      },
+      "reviews": [
+        {
+          "review_id": "rv_02",
+          "review_type": "DRIVER_REVIEW",
+          "from_user": "user002",
+          "rating": 4,
+          "comment": "Great driver, punctual."
+        },
+        {
+          "review_id": "rv_02",
+          "review_type": "DRIVER_REVIEW",
+          "from_user": "user003",
+          "rating": 5,
+          "comment": "Awesome carpool experience!"
+        }
+      ]
+    }
+  ]
+  ,
+  "passengers": [{
+    "id": "user002",
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "phone": "+1 (234) 567-8901",
+    "profile_picture": "url/to/passenger/profile_picture.jpg",
+    "ride_requests": [
+      {
+        "ride_request_id": "rr_01",
+        "starting_point": "Str. name or location",
+        "destination": "Str. name or location",
+        "preferred_days": ["Monday", "Wednesday"],
+        "preferred_time": {"start": "08:00", "end": "10:00"},
+        "flexibility": ["Strict", "Flexible"],
+        "notes": "I have a small dog that will be traveling with me. He's well-behaved."
+      },
+      {
+        "ride_request_id": "rr_01",
+        "starting_point": "Str. name or location",
+        "destination": "Str. name or location",
+        "preferred_days": ["Tuesday", "Thursday"],
+        "preferred_time": {"start": "17:00", "end": "19:00"},
+        "flexibility": ["Strict", "Flexible"],
+        "notes": ""
+      }
+    ],
+    "preferences": {
+      "smoking_allowed": false,
+      "pets_allowed": true,
+      "music_preference": "Any",
+      "max_passengers": 3
+    },
+    "reviews": [
+      {
+        "review_id": "rv_02",
+        "review_type": "PASSENGER_REVIEW",
+        "from_user": "user001",
+        "rating": 5,
+        "comment": "Great passenger, easy to communicate with."
+      }
+    ]
+  },
+  {
+    "id": "user011",
+    "name": "Haley Thompson",
+    "email": "haley@example.com",
+    "phone": "+1 (890) 123-4567",
+    "profile_picture": "url/to/passenger/profile_picture.jpg",
+    "ride_requests": [
+      {
+        "ride_request_id": "rr_04",
+        "starting_point": "Shopping Mall",
+        "destination": "Downtown Square",
+        "preferred_days": ["Tuesday", "Thursday"],
+        "preferred_time": {"start": "09:00", "end": "11:00"},
+        "flexibility": ["Flexible"],
+        "notes": "I enjoy listening to classical music during the ride."
+      }
+    ],
+    "preferences": {
+      "smoking_allowed": false,
+      "pets_allowed": false,
+      "music_preference": "Classical",
+      "max_passengers": 2
+    },
+    "reviews": [
+      {
+        "review_id": "rv_12",
+        "review_type": "PASSENGER_REVIEW",
+        "from_user": "user012",
+        "rating": 5,
+        "comment": "Pleasant passenger, on-time."
+      }
+    ]
+  },
+  {
+    "id": "user013",
+    "name": "Isabella Rodriguez",
+    "email": "isabella@example.com",
+    "phone": "+1 (901) 234-5678",
+    "profile_picture": "url/to/passenger/profile_picture.jpg",
+    "ride_requests": [
+      {
+        "ride_request_id": "rr_05",
+        "starting_point": "Office Complex",
+        "destination": "Tech Park",
+        "preferred_days": ["Monday", "Wednesday", "Friday"],
+        "preferred_time": {"start": "16:00", "end": "18:00"},
+        "flexibility": ["Flexible"],
+        "notes": "I have a small plant that I'd like to bring along."
+      }
+    ],
+    "preferences": {
+      "smoking_allowed": false,
+      "pets_allowed": false,
+      "music_preference": "Any",
+      "max_passengers": 3
+    },
+    "reviews": [
+      {
+        "review_id": "rv_13",
+        "review_type": "PASSENGER_REVIEW",
+        "from_user": "user014",
+        "rating": 4,
+        "comment": "Good communication, punctual."
+      }
+    ]
+  },
+  {
+    "id": "user015",
+    "name": "Jackson Brown",
+    "email": "jackson@example.com",
+    "phone": "+1 (012) 345-6789",
+    "profile_picture": "url/to/passenger/profile_picture.jpg",
+    "ride_requests": [
+      {
+        "ride_request_id": "rr_06",
+        "starting_point": "Residential Area",
+        "destination": "Airport",
+        "preferred_days": ["Wednesday", "Friday"],
+        "preferred_time": {"start": "18:30", "end": "20:30"},
+        "flexibility": ["Strict"],
+        "notes": "I prefer a silent ride with no conversations."
+      }
+    ],
+    "preferences": {
+      "smoking_allowed": false,
+      "pets_allowed": false,
+      "music_preference": "Silent",
+      "max_passengers": 2
+    },
+    "reviews": [
+      {
+        "review_id": "rv_14",
+        "review_type": "PASSENGER_REVIEW",
+        "from_user": "user016",
+        "rating": 5,
+        "comment": "Quiet and respectful passenger."
+      }
+    ]
+  }
+],
+  "ride": [
+    {
+      "id": "ride003",
+      "driver_id": "user005",
+      "passenger_id": "user011",
+      "starting_point": "Green Park",
+      "destination": "Downtown Square",
+      "scheduled_date": "2023-03-01",
+      "scheduled_time": {"start": "09:30", "end": "10:00"},
+      "status": "scheduled",
+      "agreement": {
+        "agreement_id": "ag_04",
+        "fare": null,
+        "additional_notes": "Driver and passenger agreed on payment details."
+      },
+      "reviews": [
+        {
+          "review_id": "rv_15",
+          "review_type": "RIDE_REVIEW",
+          "from_user": "user005",
+          "to_user": "user011",
+          "rating": 4,
+          "comment": "Friendly driver, smooth ride."
+        },
+        {
+          "review_id": "rv_16",
+          "review_type": "RIDE_REVIEW",
+          "from_user": "user011",
+          "to_user": "user005",
+          "rating": 5,
+          "comment": "Pleasant journey, on-time."
+        }
+      ]
+    },
+    {
+      "id": "ride004",
+      "driver_id": "user007",
+      "passenger_id": "user013",
+      "starting_point": "Downtown Square",
+      "destination": "Tech Park",
+      "scheduled_date": "2023-03-05",
+      "scheduled_time": {"start": "12:30", "end": "13:00"},
+      "status": "scheduled",
+      "agreement": {
+        "agreement_id": "ag_05",
+        "fare": 20.0,
+        "additional_notes": "Driver and passenger agreed on payment details."
+      },
+      "reviews": [
+        {
+          "review_id": "rv_17",
+          "review_type": "RIDE_REVIEW",
+          "from_user": "user007",
+          "to_user": "user013",
+          "rating": 5,
+          "comment": "Professional driver, comfortable ride."
+        },
+        {
+          "review_id": "rv_18",
+          "review_type": "RIDE_REVIEW",
+          "from_user": "user013",
+          "to_user": "user007",
+          "rating": 4,
+          "comment": "Good experience, on-time."
+        }
+      ]
+    },
+    {
+      "id": "ride005",
+      "driver_id": "user009",
+      "passenger_id": "user015",
+      "starting_point": "Tech Park",
+      "destination": "Airport",
+      "scheduled_date": "2023-03-10",
+      "scheduled_time": {"start": "18:00", "end": "18:30"},
+      "status": "scheduled",
+      "agreement": {
+        "agreement_id": "ag_06",
+        "fare": null,
+        "additional_notes": "Driver and passenger agreed on payment details."
+      },
+      "reviews": [
+        {
+          "review_id": "rv_19",
+          "review_type": "RIDE_REVIEW",
+          "from_user": "user009",
+          "to_user": "user015",
+          "rating": 4,
+          "comment": "Polite driver, clean car."
+        },
+        {
+          "review_id": "rv_20",
+          "review_type": "RIDE_REVIEW",
+          "from_user": "user015",
+          "to_user": "user009",
+          "rating": 5,
+          "comment": "Comfortable journey, on-time."
+        }
+      ]
+    },
+    {
+    "id": "ride001",
+    "driver_id": "user001",
+    "passenger_id": "user002",
+    "starting_point": "Str. name or location",
+    "destination": "Str. name or location",
+    "scheduled_date": "2023-01-01",
+    "scheduled_time": {"start": "08:30", "end": "09:00"},
+    "status": "scheduled",
+    "agreement": {
+      "agreement_id": "ag_02",
+      "fare": null,
+      "additional_notes": "Driver and passenger agreed on payment details."
+    },
+    "reviews": [
+      {
+        "review_id": "rv_03",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user001",
+        "to_user": "user002",
+        "rating": 4,
+        "comment": "Smooth ride, punctual."
+      },
+      {
+        "review_id": "rv_04",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user002",
+        "to_user": "user001",
+        "rating": 5,
+        "comment": "Great driver, comfortable ride."
+      }
+    ]
+  }]
+}

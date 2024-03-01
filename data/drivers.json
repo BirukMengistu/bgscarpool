@@ -1,0 +1,79 @@
+{
+    "drivers": [
+      {
+        "id": "user001",
+        "name": "Alice Johnson",
+        "email": "alice@example.com",
+        "phone": "+1 (123) 456-7890",
+        "location": "123 Main St, Cityville",
+        "car": {
+          "make": "Toyota",
+          "model": "Camry",
+          "year": 2020,
+          "color": "Blue",
+          "plateNumber": "ABC 123"
+        },
+        "preferences": {
+          "smokingAllowed": false,
+          "petsAllowed": true,
+          "musicPreference": "Any",
+          "maxPassengers": 3
+        },
+        "reviews": [
+          {
+            "fromUser": "user002",
+            "rating": 4,
+            "comment": "Great driver, punctual."
+          },
+          {
+            "fromUser": "user003",
+            "rating": 5,
+            "comment": "Awesome carpool experience!"
+          }
+        ]
+      },
+      {
+        "id": "user002",
+        "name": "Bob Smith",
+        "email": "bob@example.com",
+        "phone": "+1 (234) 567-8901",
+        "location": "456 Elm St, Suburbia",
+        "car": null,
+        "preferences": {
+          "smokingAllowed": true,
+          "petsAllowed": true,
+          "musicPreference": "Rock",
+          "maxPassengers": 2
+        },
+        "reviews": [
+          {
+            "fromUser": "user001",
+            "rating": 3,
+            "comment": "Good driver but arrived late."
+          }
+        ]
+      },
+      {
+        "id": "user003",
+        "name": "Carol Davis",
+        "email": "carol@example.com",
+        "phone": "+1 (345) 678-9012",
+        "location": "789 Oak St, Outskirts",
+        "car": {
+          "make": "Honda",
+          "model": "Civic",
+          "year": 2019,
+          "color": "Red",
+          "plateNumber": "XYZ 456"
+        },
+        "preferences": {
+          "smokingAllowed": false,
+          "petsAllowed": true,
+          "musicPreference": "Classical",
+          "maxPassengers": 4
+        },
+        "reviews": []
+      }
+    ]
+  }
+  

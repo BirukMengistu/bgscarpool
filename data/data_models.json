@@ -1,0 +1,212 @@
+{
+  "driver": {
+    "id": "user001",
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "phone": "+1 (123) 456-7890",
+    "profile_picture": "url/to/driver/profile_picture.jpg",
+    "trips": [
+      {
+        "trip_id": "tr_01",
+        "car_id": "ca_02",
+        "starting_point": "Str. name or location",
+        "destination": "Str. name or location",
+        "available_days": ["Monday"],
+        "available_time": {"start": "07:00", "end": "09:00"},
+        "flexibility": ["Strict", "Flexible"],
+        "notes": "I might open radio news on this trip."
+      },
+      {
+        "trip_id": "tr_02",
+        "car_id": "ca_01",
+        "starting_point": "Str. name or location",
+        "destination": "Str. name or location",
+        "available_days": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "available_time": {"start": "07:00", "end": "17:00"},
+        "flexibility": ["Strict", "Flexible"],
+        "notes": "I prefer a quiet ride, and I'm open to making short detours if needed."
+      }
+    ],
+    "car": [{
+      "car_id": "ca_01",
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2020,
+      "color": "Blue",
+      "plate_number": "ABC 123"
+    },
+    {
+      "car_id": "ca_02",
+      "make": "Toyota",
+      "model": "RAv4",
+      "year": 2020,
+      "color": "Blue",
+      "plate_number": "ABC 123"
+    }],
+    "preferences": {
+      "smoking_allowed": false,
+      "pets_allowed": true,
+      "music_preference": "Any",
+      "max_passengers": 3
+    },
+    "reviews": [
+      {
+        "review_id": "rv_02",
+        "review_type": "DRIVER_REVIEW",
+        "from_user": "user002",
+        "rating": 4,
+        "comment": "Great driver, punctual."
+      },
+      {
+        "review_id": "rv_02",
+        "review_type": "DRIVER_REVIEW",
+        "from_user": "user003",
+        "rating": 5,
+        "comment": "Awesome carpool experience!"
+      }
+    ]
+  }
+  ,
+  "passenger": {
+    "id": "user002",
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "phone": "+1 (234) 567-8901",
+    "profile_picture": "url/to/passenger/profile_picture.jpg",
+    "ride_requests": [
+      {
+        "ride_request_id": "rr_01",
+        "starting_point": "Str. name or location",
+        "destination": "Str. name or location",
+        "preferred_days": ["Monday", "Wednesday"],
+        "preferred_time": {"start": "08:00", "end": "10:00"},
+        "flexibility": ["Strict", "Flexible"],
+        "notes": "I have a small dog that will be traveling with me. He's well-behaved."
+      },
+      {
+        "ride_request_id": "rr_01",
+        "starting_point": "Str. name or location",
+        "destination": "Str. name or location",
+        "preferred_days": ["Tuesday", "Thursday"],
+        "preferred_time": {"start": "17:00", "end": "19:00"},
+        "flexibility": ["Strict", "Flexible"],
+        "notes": ""
+      }
+    ],
+    "preferences": {
+      "smoking_allowed": false,
+      "pets_allowed": true,
+      "music_preference": "Any",
+      "max_passengers": 3
+    },
+    "reviews": [
+      {
+        "review_id": "rv_02",
+        "review_type": "PASSENGER_REVIEW",
+        "from_user": "user001",
+        "rating": 5,
+        "comment": "Great passenger, easy to communicate with."
+      }
+    ]
+  },
+  "ride":[
+    {
+    "id": "ride001",
+    "driver_id": "user001",
+    "passenger_id": "user002",
+    "starting_point": "Str. name or location",
+    "destination": "Str. name or location",
+    "scheduled_date": "2023-01-01",
+    "scheduled_time": {"start": "08:30", "end": "09:00"},
+    "status": "scheduled",
+    "agreement": {
+      "agreement_id": "ag_02",
+      "fare": null,
+      "additional_notes": "Driver and passenger agreed on payment details."
+    },
+    "reviews": [
+      {
+        "review_id": "rv_03",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user001",
+        "to_user": "user002",
+        "rating": 4,
+        "comment": "Smooth ride, punctual."
+      },
+      {
+        "review_id": "rv_04",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user002",
+        "to_user": "user001",
+        "rating": 5,
+        "comment": "Great driver, comfortable ride."
+      }
+    ]
+  },
+  {
+    "id": "ride002",
+    "driver_id": "user002",
+    "passenger_id": "user003",
+    "starting_point": "Str. name or location",
+    "destination": "Str. name or location",
+    "scheduled_date": "2023-01-01",
+    "scheduled_time": {"start": "08:30", "end": "09:00"},
+    "status": "scheduled",
+    "agreement": {
+      "agreement_id": "ag_02",
+      "fare": null,
+      "additional_notes": "Driver and passenger agreed on payment details."
+    },
+    "reviews": [
+      {
+        "review_id": "rv_03",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user001",
+        "to_user": "user002",
+        "rating": 4,
+        "comment": "Smooth ride, punctual."
+      },
+      {
+        "review_id": "rv_04",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user002",
+        "to_user": "user001",
+        "rating": 5,
+        "comment": "Great driver, comfortable ride."
+      }
+    ]
+  },
+  {
+    "id": "ride002",
+    "driver_id": "user002",
+    "passenger_id": "user003",
+    "starting_point": "Str. name or location",
+    "destination": "Str. name or location",
+    "scheduled_date": "2023-01-01",
+    "scheduled_time": {"start": "08:30", "end": "09:00"},
+    "status": "scheduled",
+    "agreement": {
+      "agreement_id": "ag_02",
+      "fare": null,
+      "additional_notes": "Driver and passenger agreed on payment details."
+    },
+    "reviews": [
+      {
+        "review_id": "rv_03",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user001",
+        "to_user": "user002",
+        "rating": 4,
+        "comment": "Smooth ride, punctual."
+      },
+      {
+        "review_id": "rv_04",
+        "review_type": "RIDE_REVIEW",
+        "from_user": "user002",
+        "to_user": "user001",
+        "rating": 5,
+        "comment": "Great driver, comfortable ride."
+      }
+    ]
+  }]
+}

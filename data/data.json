@@ -1,0 +1,182 @@
+{
+  "drivers": [
+    {
+      "id": "user001",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "+1 (123) 456-7890",
+      "location": "123 Main St, Cityville",
+      "car": {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "Blue",
+        "plateNumber": "ABC 123"
+      },
+      "preferences": {
+        "smokingAllowed": false,
+        "petsAllowed": true,
+        "musicPreference": "Any",
+        "maxPassengers": 3
+      },
+      "reviews": [
+        {
+          "fromUser": "user002",
+          "rating": 4,
+          "comment": "Great driver, punctual."
+        },
+        {
+          "fromUser": "user003",
+          "rating": 5,
+          "comment": "Awesome carpool experience!"
+        }
+      ]
+    },
+    {
+      "id": "user002",
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "phone": "+1 (234) 567-8901",
+      "location": "456 Elm St, Suburbia",
+      "car": null,
+      "preferences": {
+        "smokingAllowed": true,
+        "petsAllowed": true,
+        "musicPreference": "Rock",
+        "maxPassengers": 2
+      },
+      "reviews": [
+        {
+          "fromUser": "user001",
+          "rating": 3,
+          "comment": "Good driver but arrived late."
+        }
+      ]
+    },
+    {
+      "id": "user003",
+      "name": "Carol Davis",
+      "email": "carol@example.com",
+      "phone": "+1 (345) 678-9012",
+      "location": "789 Oak St, Outskirts",
+      "car": {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2019,
+        "color": "Red",
+        "plateNumber": "XYZ 456"
+      },
+      "preferences": {
+        "smokingAllowed": false,
+        "petsAllowed": true,
+        "musicPreference": "Classical",
+        "maxPassengers": 4
+      },
+      "reviews": []
+    }
+  ],
+  "passengers": [
+    {
+      "id": "passenger001",
+      "name": "Eva Martinez",
+      "email": "eva@example.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "456 Elm St, Suburbia",
+      "destination": "789 Oak St, Outskirts",
+      "preferences": {
+        "smokingAllowed": false,
+        "petsAllowed": true,
+        "musicPreference": "Pop",
+        "partySize": 2
+      }
+    },
+    {
+      "id": "passenger002",
+      "name": "Michael Wilson",
+      "email": "michael@example.com",
+      "phone": "+1 (555) 987-6543",
+      "location": "123 Main St, Cityville",
+      "destination": "789 Oak St, Outskirts",
+      "preferences": {
+        "smokingAllowed": true,
+        "petsAllowed": false,
+        "musicPreference": "Any",
+        "partySize": 1
+      }
+    },
+    {
+      "id": "passenger003",
+      "name": "Sophia Lee",
+      "email": "sophia@example.com",
+      "phone": "+1 (555) 234-5678",
+      "location": "789 Oak St, Outskirts",
+      "destination": "123 Main St, Cityville",
+      "preferences": {
+        "smokingAllowed": false,
+        "petsAllowed": true,
+        "musicPreference": "Rock",
+        "partySize": 4
+      }
+    }
+  ],
+  "ride": [
+    {
+      "id": "User001",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "+1 (123) 456-7890",
+      "location": "123 Main St, Cityville",
+      "car": {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "Blue",
+        "plateNumber": "ABC 123"
+      },
+      "preferences": {
+        "smokingAllowed": false,
+        "petsAllowed": true,
+        "musicPreference": "Any",
+        "maxPassengers": 3
+      },
+      "reviews": [
+        {
+          "fromUser": "user002",
+          "rating": 4,
+          "comment": "Great driver, punctual."
+        },
+        {
+          "fromUser": "user003",
+          "rating": 5,
+          "comment": "Awesome carpool experience!"
+        }
+      ]
+    },
+    {
+      "name": "bob  to",
+      "email": "biruk.kabteymer@gmail.com",
+      "location": "jome 2",
+      "phone": "",
+      "preferences": {
+        "smokingAllowed": true,
+        "petsAllowed": true,
+        "musicPreference": "",
+        "partySize": "2"
+      },
+      "id": "9i9H5Po"
+    },
+    {
+      "name": "",
+      "email": "biruk.kabteymer@gmail.com",
+      "location": "",
+      "phone": "",
+      "preferences": {
+        "smokingAllowed": false,
+        "petsAllowed": true,
+        "musicPreference": "",
+        "partySize": 0
+      },
+      "id": "N9IZ2zX"
+    }
+  ]
+}

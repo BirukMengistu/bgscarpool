@@ -4,8 +4,11 @@ import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 import { Button } from "./ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
-
+//import {useKindeAuth} from '@kinde-oss/kinde-auth-react';
 const LoginSignupDialog = () => {
+  
+//const { login, register } = useKindeAuth();
+
   return (
     <Dialog>
       <DialogTrigger asChild>

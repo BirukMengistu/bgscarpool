@@ -1,12 +1,15 @@
 import React from 'react'
-import LoginSignupDialog from '../Components/LoginSignupDialog'
 import Logo from "../assets/logo.svg"
 import { Link, NavLink } from "react-router-dom"
 import { Search, PlusCircle, LogOut, User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage  } from "./ui/avatar";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import LoginSignupDialog from './LoginSignupDialog';
+
 export default function Header() {
-    const isGuest = false;
+
+  
+    const isGuest = true;
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background mx-auto flex p-3 lg:px-16 items-center justify-end">
     <NavLink to="/" className="inline-flex -order-1 items-center gap-2">
@@ -22,7 +25,10 @@ export default function Header() {
     </nav>
     <div>
     {isGuest ?
-      <LoginSignupDialog />
+   
+     
+      <LoginSignupDialog/>
+  
       :
       <DropdownMenu>
         <DropdownMenuTrigger>

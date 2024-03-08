@@ -45,7 +45,7 @@ const Footer = () => {
               aria-label="Our address"
               title="Our address"
             >
-              India
+              Addis Ababa
             </a>
           </div>
         </div>

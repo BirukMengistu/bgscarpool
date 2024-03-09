@@ -56,7 +56,7 @@ const PublishCard = () => {
   };
 
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[350px] ">
       <CardHeader>
         <CardTitle>Create a Ride</CardTitle>
         <CardDescription>Publish your ride with just one click.</CardDescription>
@@ -64,15 +64,16 @@ const PublishCard = () => {
       <CardContent>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="grid w-full items-center gap-4">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4 w-full max-w-sm ">
           <FormField
             control={form.control}
             name="from"
             render={({ field }) => (
-              <FormItem className="flex flex-col space-y-1.5">
+              <FormItem className="flex flex-col space-y-1.5 ">
                 <FormLabel>From</FormLabel>
                 <FormControl>
-                  <Input placeholder="From" required {...field} />
+                  <Input placeholder="From" required {...field}  
+                  className='items-baseline'/>
                 </FormControl>
                 <FormMessage />
               </FormItem>

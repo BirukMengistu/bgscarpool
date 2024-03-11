@@ -1,12 +1,12 @@
 # React + TypeScript + Vite
 
-start ->
-npm run dev
-build ->
-npm run build
-json server
-Json-server --watch -p 8081
-
+to start development Env  ->
+--- npm run dev
+to build development Env  ->->
+--  npm run build
+ mock json server data
+ to start json server
+ -- json-server --port 8081 --watch data/sample-data.jsondb.json
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

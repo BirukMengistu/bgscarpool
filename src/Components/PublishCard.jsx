@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { Toaster } from "./ui/sonner";
 import { toast } from "sonner";
-
+import {useSession} from '@clerk/clerk-react'
 const formSchema = z.object({
   from: z.string(),
   to: z.string(),
@@ -21,6 +21,7 @@ const formSchema = z.object({
 
 
 const PublishCard = () => {
+  const {isSignedIn} =useSession()
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -160,7 +161,8 @@ const PublishCard = () => {
               </FormItem>
             )}
           />
-          <Button type="submit">Publish</Button>
+         {isSignedIn?<Button type="submit">Publish</Button>:
+         <Button type="submit" disabled={true}>Publish</Button>} 
         </form>
       </Form>
       </CardContent>

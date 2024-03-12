@@ -39,7 +39,7 @@ const SearchPage = () => {
               <Skeleton className="h-[200px] w-full my-3 p-4 rounded-xl" />
             </>}
             {data?.map((ride, index) => 
-              <Link key={ride?._id} to={`/ride/${ride._id}`}>
+              <Link key={index} to={`/ride/${ride._id}`}>
                 <RideCard key={index} details={ride} />
               </Link>
             )}

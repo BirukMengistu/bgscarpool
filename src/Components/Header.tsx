@@ -19,7 +19,7 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 export default function Header() {
-  const isGuest = true;
+  //const isGuest = true;
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background mx-auto flex p-3 lg:px-16 items-center justify-end">
       <NavLink to="/" className="inline-flex -order-1 items-center gap-2">
@@ -33,19 +33,23 @@ export default function Header() {
           to="/search"
           className="flex justify-center px-4 items-center hover:text-primary "
         >
-          <Search className="h-4 w-4" /> Search
+          <Search className="h-5 w-6" /> Search
         </NavLink>
         <NavLink
           to="/offer-seat"
-          className="flex items-center px-4  hover:text-primary"
+          className="flex items-center p-2  border-1 rounded-sm border-secondary text-white "
         >
-          <PlusCircle className="h-4 w-4" /> Publish a ride
+          <PlusCircle className="h-5 w-6 text-white" /> Publish a Ride
         </NavLink>
       </nav>
       <div>
         <SignedOut>
-          <SignInButton />
+          <div  className='bg-primary rounded-sm p-1'>
+           < SignInButton style={{ color:'white' , paddingHorizontal: '2rem',}} children='Login'/>
+           </div>
         </SignedOut>
+          
+          
         <SignedIn>
           <UserButton />
         </SignedIn>

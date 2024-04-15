@@ -6,7 +6,7 @@ to build development Env  ->->
 --  npm run build
  mock json server data
  to start json server
- -- json-server --port 8081 --watch data/sample-data.jsondb.json
+ -- npx json-server --port 8001 --watch data/sample-data.jsondb.json
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
